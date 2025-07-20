@@ -9,4 +9,4 @@ def get_available_memory_mb():
 
 def ping_localhost():
     result = subprocess.run(["ping", "-c", "1", "127.0.0.1"], capture_output=True)
-    return result.returncode == o
+    return result.returncode == 0
